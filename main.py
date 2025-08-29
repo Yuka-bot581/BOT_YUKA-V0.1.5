@@ -199,9 +199,6 @@ async def send_log(guild: discord.Guild, text: str):
     title="หัวข้อของ embed",
     description="คำอธิบายใต้หัวข้อ",
     pairs="รายการคู่ EMOJI=ROLE คั่นด้วยคอมมา หรือขึ้นบรรทัดใหม่",
-    pairs="รายการคู่ EMOJI=ROLE คั่นด้วยคอมมา หรือขึ้นบรรทัดใหม่",
-    pairs="รายการคู่ EMOJI=ROLE คั่นด้วยคอมมา หรือขึ้นบรรทัดใหม่",
-    pairs="รายการคู่ EMOJI=ROLE คั่นด้วยคอมมา หรือขึ้นบรรทัดใหม่",
     image_url="ลิงก์รูป/ไฟล์ gif (ถ้ามี)",
 )
 async def createrole(interaction: discord.Interaction, channel: discord.TextChannel, title: str, description: str, pairs: str, image_url: str | None = None):
@@ -254,6 +251,7 @@ async def createrole(interaction: discord.Interaction, channel: discord.TextChan
 # ---------------------- RUN ----------------------
 server_on()
 bot.run(os.getenv("TOKEN"))
+
 
 
 
